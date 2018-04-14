@@ -25,6 +25,7 @@ class JsonWithEncodingPipline(object):
         self.file = codecs.open('output/company2.json', 'w', encoding='utf-8')
 
     def process_item(self, item, spider):
+        item['create_time'] = str(item['create_time'])
         lines = json.dumps(dict(item), ensure_ascii=False) + '\n'
         self.file.write(lines)
         return item

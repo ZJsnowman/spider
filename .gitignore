@@ -28,4 +28,3 @@ log/
 *.log
 /output/
 /tianyancha.html
-/ArticleSpider/settings.py
