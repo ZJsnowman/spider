@@ -121,9 +121,9 @@ class ZhihuSpider(scrapy.Spider):
 
         browser.get("https://www.zhihu.com/signin")
         browser.find_element_by_xpath("//div[@class='SignFlow-accountInput Input-wrapper']/input").send_keys(
-            "615273574@qq.com")
+            "知乎账号")
         browser.find_element_by_xpath("//div[@class='SignFlow-password']/div/div/input").send_keys(
-            "zhangjun231")
+            "知乎密码")
         browser.find_element_by_xpath(
             "//button[@class='Button SignFlow-submitButton Button--primary Button--blue']").click()
         import time

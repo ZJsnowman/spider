@@ -103,10 +103,10 @@ class TianyanchaSpider(scrapy.Spider):
         self.browser.get("https://www.tianyancha.com/login")
         self.browser.find_element_by_xpath(
             "//div[@class='modulein modulein1 mobile_box pl30 pr30 f14 collapse in']//input[@class='_input input_nor contactphone']").send_keys(
-            "18025483634")
+            "天眼查账号")
         self.browser.find_element_by_xpath(
             "//div[@class='modulein modulein1 mobile_box pl30 pr30 f14 collapse in']//input[@class='_input input_nor contactword']").send_keys(
-            "zhangjun231")
+            "天眼查密码")
         self.browser.find_element_by_xpath(
             "//div[@onclick='loginByPhone(event);']").click()
         import time
